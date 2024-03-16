@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    animation: annime 50s infinite;
+}
+
+@keyframes annime {
+    0%{
+        background-color: white;
+    }
+    
+    100%{
+        background-color: rgb(36, 36, 36);
+    }
+}
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    animation: raining 50s infinite;
+}
+
+@keyframes raining {
+    0%{
+        /* background-color: white; */
+    }
+    
+    100%{
+
+        background: url("https://media1.giphy.com/media/K9AnZe1fuZb68/giphy.gif?cid=ecf05e47t792xxdmqf6pjxb3xyaiksnnzpk5poz0pqf5ywio&ep=v1_stickers_search&rid=giphy.gif&ct=s");
+    }
+  
+}
+
+.mountain{
+    position: absolute;
+}
+
+.grass{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+.gif1{
+    position: absolute;   
+    width: 200px;
+    bottom:230px;
+    right:30px;
+     animation: moveinggif1 30s infinite ease;
+}
+
+@keyframes moveinggif1 {
+    from{
+        width: 100px;
+        bottom:230px;
+        right:30px;
+    }
+    to{
+        width: 300px;
+        bottom:310px;
+        right:1600px;
+    }
+}
+
+.eagle{
+    position: absolute;
+    width: 50px;
+    z-index: -1;
+    bottom:450px ;
+    right:1200px;
+     animation: moveingeagle 20s infinite ease;
+}
+
+@keyframes moveingeagle {
+    from{
+    width: 50px;
+    bottom:600px ;
+    right:1200px;
+    }
+    to{
+        position: fixed;
+        width: 200px;
+        bottom:300px ;
+        right:-410px;
+    }
+}
+
+.station{
+    top: 150px;
+    right: 500px;
+    position: absolute;
+    width: 350px;
+}
+
+.track1{
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: 110px;
+}
+
+.train1{
+    position: absolute;
+    bottom: 0px;
+    width: 320px;
+    animation: moveingTain 15s infinite;
+}
+
+
+
+@keyframes moveingTain {
+    from{
+        position:fixed ;
+        right: -300px;
+    }
+    to{
+        right: 1800px;
+    }
+}
+
+.track2{
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+}
+
+.train2{
+    position: absolute;
+    bottom: 40px;
+    width: 390px;
+    animation: moveingTain2 10s infinite;
+}
+
+@keyframes moveingTain2 {
+    from{
+        right: 2000px;
+    }
+    to{
+        position:fixed ;
+        right: -700px;
+    }
+}
